@@ -1,16 +1,17 @@
 <template>
   <div class="qa-container">
-    问答
+    <page></page>
   </div>
 </template>
 
 <script>
+import page from '@/components/404-page'
 export default {
   name:'QaIndex',
   data() {
     return {}
   },
-  components:{},
+  components:{page},
   props:{},
   computed:{},
   watch:{},

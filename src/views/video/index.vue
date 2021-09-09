@@ -1,16 +1,17 @@
 <template>
   <div class="video-container">
-    ship
+    <page></page>
   </div>
 </template>
 
 <script>
+import page from '@/components/404-page'
 export default {
   name:'VideoIndex',
   data() {
     return {}
   },
-  components:{},
+  components:{page},
   props:{},
   computed:{},
   watch:{},

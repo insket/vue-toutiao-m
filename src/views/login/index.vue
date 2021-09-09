@@ -119,6 +119,9 @@ export default {
 
         //将会返回的用户登录token放到vuex中
         this.$store.commit('setUser',data.data)
+
+        //登陆成功后跳转会原来页面
+        this.$router.back(-1)
       } catch (error) {
         // console.log('登陆失败',error);
         Toast.fail('登陆失败,手机号或密码错误');
