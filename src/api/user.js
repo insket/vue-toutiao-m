@@ -34,3 +34,12 @@ export const getCurrentUser = () => {
   })
 }
 
+//获取用户频道列表
+export const getUserChannels = () => {
+  return mockAjax({
+    method: 'GET',
+    url: '/channels'
+  })
+}
+
+
