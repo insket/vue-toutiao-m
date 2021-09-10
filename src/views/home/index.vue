@@ -8,7 +8,7 @@
     </van-nav-bar>
 
   <!-- tab文章列表 -->
-  <van-tabs v-model="active">
+  <van-tabs v-model="active" class="channel-tabs">
     <van-tab
      :title="channel.name"
      v-for="(channel, index) in channels" :key="index"
@@ -65,6 +65,19 @@ export default {
     }
     .van-icon {
       font-size: 18px;
+    }
+  }
+  /deep/ .channel-tabs{
+    .van-tab{
+     border-right: 1px solid rgb(235, 235, 235);
+     border-bottom: 1px solid rgb(235, 235, 235);
+    }
+    .van-tabs__line{
+      width: 20px;
+      height: 3px;
+      background-color: skyblue;
+      flex: 1;
+      bottom: 20px;
     }
   }
 }
