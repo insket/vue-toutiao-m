@@ -30,6 +30,7 @@
 </template>
 
 <script>
+//文章列表组件
 import { getArticles } from "@/api/article.js";
 import ArticleItem from '@/components/articleItem'
 export default {

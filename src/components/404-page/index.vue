@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name:'404-page',
+  name:'Errorpage',
   data() {
     return {}
   },
